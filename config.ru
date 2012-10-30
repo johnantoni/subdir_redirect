@@ -11,7 +11,7 @@ get %r{(.*)} do
   else
     # Take subdomain name and redirect to a root url with that value
     # subdir.root.com -> subdir.com
-    rewritten_host = "www.#{host.split('.').values_at(0,2)}"
+    rewritten_host = "www.#{host.split('.').values_at(0,2).join('.')}"
     rewritten_uri = [protocol, rewritten_host, query].join
     redirect rewritten_uri, 301
   end
