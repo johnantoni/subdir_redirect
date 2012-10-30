@@ -2,13 +2,11 @@
 
 ## Description
 
-Slight change to kjohnston's naked_redirect so all subdomains & naked domains redirect to => www.mydomain.com
+Another change to kjohnston's naked_redirect so all subdomains & naked domains redirect to => www.mydomain.com
 
-A Sinatra app that redirects requests for naked domains and subdomains to their www-equivalents.
+A Sinatra app that converts the subdomain value to a domain and redirects to that.
 
-For example, a request for `http://some-domain.com` would be redirected to `http://www.some-domain.com`.
-
-And for example, a request for `http://sub.some-domain.com` would be redirected to `http://www.some-domain.com`.
+For example, a request for `http://subdir.domain.ca` would be redirected to `http://www.subdir.ca`.
 
 ## Behavior
 
