@@ -1,4 +1,4 @@
-# www_redirect
+# subdir_redirect
 
 ## Description
 
